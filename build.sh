@@ -1,4 +1,6 @@
 #!/bin/bash
 
-cc ExampleCppProgramWrite.cpp -o write
-cc ExampleCppProgramRead.cpp -o read
+cd IPC
+make
+./IPC_EXAMPLE_WRITER && disown
+./IPC_EXAMPLE_READER
